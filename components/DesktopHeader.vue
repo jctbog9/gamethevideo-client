@@ -1,29 +1,29 @@
 <template>
   <div class="header-container">
     <div class="left-nav">
-      <div class="menu-item">
+      <nuxt-link to="/" class="menu-item">
         Game The Video
-      </div>
+      </nuxt-link>
     </div>
     <div class="right-nav">
-      <div class="menu-item">
+      <nuxt-link to="/reviews" class="menu-item">
         Reviews
-      </div>
-      <div class="menu-item">
+      </nuxt-link>
+      <nuxt-link to="/news" class="menu-item">
         News
-      </div>
-      <div class="menu-item">
+      </nuxt-link>
+      <nuxt-link to="/blog" class="menu-item">
         Blog
-      </div>
-      <div class="menu-item">
+      </nuxt-link>
+      <nuxt-link to="/gallery" class="menu-item">
         Gallery
-      </div>
-      <div class="menu-item">
-        About Us
-      </div>
-      <div class="menu-item">
+      </nuxt-link>
+      <nuxt-link to="/about-us" class="menu-item">
+        About
+      </nuxt-link>
+      <nuxt-link to="/contact" class="menu-item">
         Contact
-      </div>
+      </nuxt-link>
     </div>
   </div>
 </template>
@@ -54,8 +54,13 @@ export default {
   height: 65px;
   justify-content: center;
   align-items: center;
-  margin: 10px 20px;
+  margin: 10px 10px;
+  padding: 0px 20px;
   color: #ffffff;
   font-weight: bold;
+}
+
+.menu-item:hover {
+  background-color: #D33F3E;
 }
 </style>
